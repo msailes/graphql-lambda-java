@@ -62,7 +62,7 @@ export class ApiGatewayStack extends cdk.Stack {
         })
 
         new cdk.CfnOutput(this, "GraphQLAPIURL", {
-            value: httpApi.url || ''
+            value: httpApi.url || '/graphql'
         });
 
     }
